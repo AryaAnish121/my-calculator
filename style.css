@@ -155,6 +155,11 @@ body {
     font-size: 1rem;
   }
   .main-calc-inner {
+    height: 80vh;
+  }
+}
+@media screen and (max-height: 800px) {
+  .main-calc-inner {
     height: 92.5vh;
   }
 }
