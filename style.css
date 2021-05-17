@@ -70,7 +70,7 @@ body {
   justify-content: center;
   border-radius: 0.25rem;
 }
-.calc-main-buttons div div {
+.calc-main-buttons div button {
   width: 100%;
   background: hsl(30, 25%, 89%);
   box-shadow: 0px 2px 1px 1px hsl(28deg 16% 65%);
@@ -78,6 +78,12 @@ body {
   cursor: pointer;
   user-select: none;
   color: hsl(221, 14%, 31%);
+  outline: none;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
 }
 .del {
   background: hsl(225, 21%, 49%) !important;
@@ -95,19 +101,23 @@ body {
   display: flex;
   justify-content: center;
 }
-.calc-main-operation-buttons div div {
+.calc-main-operation-buttons div button {
   width: 100%;
   color: #fff;
   padding: 1rem;
   border-radius: 0.35rem;
   cursor: pointer;
   user-select: none;
+  outline: none;
+  border: none;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
 }
-.calc-main-operation-buttons div:nth-child(1) div {
+.calc-main-operation-buttons div:nth-child(1) button {
   background: hsl(225, 21%, 49%) !important;
   box-shadow: 0px 2px 1px 1px hsl(224, 28%, 35%) !important;
 }
-.calc-main-operation-buttons div:nth-child(2) div {
+.calc-main-operation-buttons div:nth-child(2) button {
   background: hsl(6, 63%, 50%);
   box-shadow: 0px 2px 1px 1px hsl(6, 70%, 34%);
 }
@@ -151,14 +161,17 @@ body {
   .main-calc-inner {
     width: 90%;
   }
-  .calc-main-buttons div div {
-    font-size: 1rem;
+  .calc-main-buttons div button {
+    font-size: 1rem !important;
   }
   .main-calc-inner {
     height: 80vh;
   }
+  .del {
+    padding: 0 !important;
+  }
 }
-@media screen and (max-height: 800px) {
+@media (max-height: 800px) and (max-width: 400px) {
   .main-calc-inner {
     height: 92.5vh;
   }

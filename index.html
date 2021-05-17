@@ -17,33 +17,33 @@
         <input class="display" placeholder="0" />
         <div class="calc-buttons">
           <div class="calc-main-buttons">
-            <div><div>7</div></div>
-            <div><div>8</div></div>
-            <div><div>9</div></div>
-            <div><div class="del">DEL</div></div>
-            <div><div>4</div></div>
-            <div><div>5</div></div>
-            <div><div>6</div></div>
-            <div><div>+</div></div>
-            <div><div>1</div></div>
-            <div><div>2</div></div>
-            <div><div>3</div></div>
-            <div><div>-</div></div>
-            <div><div>.</div></div>
-            <div><div>0</div></div>
-            <div><div>/</div></div>
-            <div><div>x</div></div>
+            <div><button>7</button></div>
+            <div><button>8</button></div>
+            <div><button>9</button></div>
+            <div><button class="del">DEL</button></div>
+            <div><button>4</button></div>
+            <div><button>5</button></div>
+            <div><button>6</button></div>
+            <div><button>+</button></div>
+            <div><button>1</button></div>
+            <div><button>2</button></div>
+            <div><button>3</button></div>
+            <div><button>-</button></div>
+            <div><button>.</button></div>
+            <div><button>0</button></div>
+            <div><button>/</button></div>
+            <div><button>x</button></div>
           </div>
           <div class="calc-main-operation-buttons">
-            <div><div class="reset">RESET</div></div>
-            <div><div class="eval">=</div></div>
+            <div><button class="reset">RESET</button></div>
+            <div><button class="eval">=</button></div>
           </div>
         </div>
       </div>
     </div>
 
   <script>
-    const calcButtons = document.querySelectorAll('.calc-main-buttons div div');
+    const calcButtons = document.querySelectorAll('.calc-main-buttons div button');
     const display = document.querySelector('.display');
     const evalButton = document.querySelector('.eval');
     const resetButton = document.querySelector('.reset');
